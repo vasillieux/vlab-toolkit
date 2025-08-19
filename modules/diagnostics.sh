@@ -37,7 +37,10 @@ verify_sandbox() {
 
     # note: if it detects no virtualization (bare metal), exits with code 1
     # therefore removing redirect & set -e may kill the functionality of this script
-    virt_type=$(systemd-detect-virt 2>/dev/null || echo "none")
+    
+    virt_type=$( (systemd-detect-virt 2>/dev/null) | xargs )
+    print_info "detected environment: $virt_type"
+
     print_info "recommendations for '$virt_type'..."
     case "$virt_type" in
         kvm|qemu|oracle|vmware) echo "  - use nat networking, disable shared folders.";;
