@@ -54,6 +54,13 @@ go ahead. \\
     ```
 
 
+## todo 
+
+- snapshots 
+- more default and non-default stuff 
+- linking, prebuilt docker images for weird project 
+- setup vpn, rdp, and stuff.
+
 ## disclaimer
 
 this toolkit installs security software. use it responsibly and only on systems you are authorized to test. the authors are not responsible for any misuse.
