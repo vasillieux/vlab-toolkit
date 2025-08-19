@@ -14,12 +14,17 @@ go ahead. \
   `-'
 ```
 
-<img width="500" height="230" alt="image" src="https://github.com/user-attachments/assets/b8bd8d51-8feb-4cf9-8176-ed36b02574b1" />
-<img width="500" height="230" alt="image" src="https://github.com/user-attachments/assets/54ceaefc-6eba-4998-8e33-0344150bdb48" />
+## Demo
+Check the demo! This is fresh-setuped Ubuntu 25.04 via [lima](https://github.com/lima-vm/lima). 
+Vlab's helping to perform all quick checks and setup neccessary software, even with hard compilation process
+<p align="center">
+    <img width="800" height="450" alt="demo" src="https://github.com/user-attachments/assets/7d3fdebb-805a-4460-b53a-7cc802103bcb" />
+</p>
 
-Check the demo! This is fresh-setuped Ubuntu 25.04 via [lima](https://github.com/lima-vm/lima).  
-![demo](https://github.com/user-attachments/assets/7d3fdebb-805a-4460-b53a-7cc802103bcb)
-
+## Screenshots
+<p>
+    <img width="500" height="230" alt="1" src="https://github.com/user-attachments/assets/b8bd8d51-8feb-4cf9-8176-ed36b02574b1" />
+</p>
 
 
 ## features
