@@ -39,9 +39,8 @@ verify_sandbox() {
     # therefore removing redirect & set -e may kill the functionality of this script
     virt_type=$(systemd-detect-virt 2>/dev/null || echo "none")
     print_info "recommendations for '$virt_type'..."
-    sleep 1
     case "$virt_type" in
-        kvm|qemu|oracle) echo "  - use nat networking, disable shared folders.";;
+        kvm|qemu|oracle|vmware) echo "  - use nat networking, disable shared folders.";;
         docker|lxc) echo "  - avoid --net=host and privileged flags. use docker volumes, not bind mounts.";;
         none) echo "  - enable ufw firewall, deny incoming traffic.";;
     esac
