@@ -52,7 +52,10 @@ export C_RESET='\033[0m'; export C_RED='\033[0;31m'; export C_GREEN='\033[0;32m'
 export C_BLUE='\033[0;34m'; export C_YELLOW='\033[1;33m';
 print_info() { echo -e "${C_BLUE}[*] $1${C_RESET}"; }
 print_error() { echo -e "${C_RED}[-] $1${C_RESET}" >&2; }
-export -f print_info print_error
+print_success() { echo -e "${C_GREEN}[+] $1${C_RESET}"; }
+print_warning() { echo -e "${C_YELLOW}[!] $1${C_RESET}"; }
+print_error() { echo -e "${C_RED}[-] $1${C_RESET}" >&2; }
+export -f print_info print_success print_warning print_error
 
 # --- prerequisite checks & os detection
 if [[ $EUID -ne 0 ]]; then print_error "must be run as root."; exit 1; fi
