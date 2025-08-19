@@ -33,34 +33,12 @@ go ahead. \
 
 ## usage
 
-1.  **clone the repository:**
-    ```sh
-    git clone <repository_url>
-    cd vlab-toolkit
-    ```
+install in one-line command
+```curl -fsSL https://raw.githubusercontent.com/vasillieux/vlab-toolkit/main/bootstrap.sh | sudo bash```
 
-2.  **make the main script executable:**
-    ```sh
-    chmod +x vlab.sh
-    ```
-
-3.  **run the toolkit with sudo:**
-    ```sh
-    sudo ./vlab.sh
-    ```
-
-4.  **select an option from the menu:**
-    ```
-    vlab toolkit // os: ubuntu
-    --- install & setup ---
-
-    >
-    1) recon tools          6) --- diagnostics ---
-    2) wifi tools           7) check installed
-    3. general tools        8) verify sandbox
-    4. evm tools            9) --- exit ---
-    5) docker engine        10) quit
-    ```
+after you can use the same command to call `vlab.sh` or 
+call it directly
+```sudo /usr/share/vlab/core/vlab.sh```
 
 ## todo 
 
