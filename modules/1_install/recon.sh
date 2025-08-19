@@ -3,7 +3,8 @@
 # META_DESC="installs a suite of tools for network, web, and subdomain reconnaissance, including nmap, gobuster, amass, and theharvester."
 
 set -e
-source "$(dirname "${BASH_SOURCE[0]}")/../../definitions/$vlab_os.sh"
+source "$source_dir/$vlab_os.sh"
+
 
 main() {
     pkg_install "${recon_pkgs[@]}"

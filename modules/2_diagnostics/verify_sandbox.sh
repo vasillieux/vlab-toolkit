@@ -3,7 +3,8 @@
 # META_DESC="analyzes the running environment (vm, container, bare metal) to find common isolation weaknesses and provides hardening advice."
 
 set -e
-source "$(dirname "${BASH_SOURCE[0]}")/../../definitions/$vlab_os.sh"
+source "$source_dir/$vlab_os.sh"
+
 
 main() {
     if ! command -v arp-scan &>/dev/null; then pkg_install "arp-scan" "nmap"; fi
