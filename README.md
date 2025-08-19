@@ -1,8 +1,9 @@
 ## vlab
 
-yo want to just get stuff done with no obselete dependencies 
+- yo want to just get stuff done with no obselete dependencies 
 when running your new qemu/docker/server lab?
-wanna to get specific package but don't want to setup it few hours just to test something?
+- wanna to get specific package but don't want to setup it few hours just to test something?
+- you not sure that your lab-system is safe?
 
 go ahead. \
 
@@ -67,6 +68,7 @@ go ahead. \
 - more default and non-default stuff 
 - linking, prebuilt docker images for weird project 
 - setup vpn, rdp, and stuff.
+- simpler clone&usage, better oneliner 
 
 ## disclaimer
 
