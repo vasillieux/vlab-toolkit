@@ -43,11 +43,13 @@ Vlab's helping to perform all quick checks and setup neccessary software, even w
 
 ## usage
 
-install in one-line command
-```curl -fsSL https://raw.githubusercontent.com/vasillieux/vlab-toolkit/main/bootstrap.sh | sudo bash```
+install in one-line command 
+```sh
+curl -fsSL https://raw.githubusercontent.com/vasillieux/vlab-toolkit/main/bootstrap.sh | sudo bash
+```
 
 after you can use the same command to call `vlab.sh` or 
-call it directly
+call it directly \
 ```sudo /usr/share/vlab/core/vlab.sh```
 
 ## todo 
