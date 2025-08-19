@@ -1,9 +1,9 @@
 ## vlab
 
-- yo want to just get stuff done with no obselete dependencies 
+- you just want to get stuff done with no obselete dependencies 
 when running your new qemu/docker/server lab?
-- wanna to get specific package but don't want to setup it few hours just to test something?
-- you not sure that your lab-system is safe?
+- wanna get specific package but don't want to setup it few hours just to test something?
+- you are not sure if your lab-system is safe?
 
 go ahead. \
 
