@@ -206,7 +206,6 @@ prepare_system() {
 #}
 render_menu() {
     local title="$1"
-    # use prefixed internal names for namerefs to avoid collision.
     local -n _options=$3
     local -n _descriptions=$4
     local current_selection=0
@@ -222,14 +221,18 @@ render_menu() {
             fi
         done
         echo -e "\n${C_BLUE}description:${C_RESET}"; printf "%s\n" "${_descriptions[$current_selection]}" | fold -s -w 80
-        read -rsn1 key
+        
+        # read directly from the terminal, not from the stdin pipe.
+        read -rsn1 key < /dev/tty
+        
         case "$key" in
-            $'\x1b') read -rsn2 key; if [[ $key == "[A" ]]; then current_selection=$(( (current_selection - 1 + ${#_options[@]}) % ${#_options[@]} )); elif [[ $key == "[B" ]]; then current_selection=$(( (current_selection + 1) % ${#_options[@]} )); fi ;;
+            $'\x1b') read -rsn2 key < /dev/tty; if [[ $key == "[A" ]]; then current_selection=$(( (current_selection - 1 + ${#_options[@]}) % ${#_options[@]} )); elif [[ $key == "[B" ]]; then current_selection=$(( (current_selection + 1) % ${#_options[@]} )); fi ;;
             "") tput cnorm; return $current_selection ;;
             q|Q) tput cnorm; return 255 ;;
         esac
     done
 }
+
 
 prepare_system() { print_info "syncing packages and installing core tools..."; update_system; os_pkg_install "${core_deps[@]}"; }
 # initialization!
@@ -240,7 +243,7 @@ while true; do
     category_names=(); for cat in "${categories[@]}"; do category_names+=("$(tr '_' ' ' <<< "${cat//[0-9_]/ }" | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1')"); done
     category_names+=("remote modules (catalogue)")
 
-    render_menu "${C_GREEN}vlab toolkit // os: $vlab_os${C_RESET}"  "select a category" category_names categories
+    render_menu "VLAB TOOLKIT // OS: $vlab_os" "select a category" category_names categories
     main_choice=$?
 
     if [ $main_choice -eq 255 ]; then clear; print_info "exit."; exit 0; fi
@@ -255,12 +258,10 @@ while true; do
         name=$(grep '^# META_NAME=' "$file" | cut -d'=' -f2 | tr -d '"'); desc=$(grep '^# META_DESC=' "$file" | cut -d'=' -f2 | tr -d '"')
         final_name="${name:-$(basename "$file")}"; final_desc="${desc:-no description.}"
 
-        # --- integrity check logic ---
         if [[ "$file" == "$cache_dir"* ]]; then
             repo_path=$(dirname "$(dirname "$file")")
             db_file="$repo_path/.hashes.db"
             if [ -f "$db_file" ]; then
-                # we ALREADY have git/curl so should have sha module, easy deal
                 current_hash=$(sha256sum "$file" | awk '{print $1}')
                 trusted_hash=$(grep -F "  $file" "$db_file" | awk '{print $1}')
                 if [[ -n "$trusted_hash" && "$current_hash" != "$trusted_hash" ]]; then
@@ -279,7 +280,7 @@ while true; do
     selected_module="${module_files[$sub_choice]}"
     clear; print_info "executing: $(echo -e "${module_names[$sub_choice]}" | sed 's/\x1b\[[0-9;]*m//g')"
     echo "---"; bash "$selected_module"; echo "---"
-    print_info "module finished. press any key to return."; read -rsn1
+    print_info "module finished. press any key to return."; read -rsn1 key < /dev/tty
 done
 
 # while true; do
