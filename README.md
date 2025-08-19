@@ -23,6 +23,7 @@ go ahead. \
 -   **modular design:** logic is separated into a controller, installer modules, and os-specific definitions.
 -   **targeted installation:** install only the toolsets you need (recon, wifi, general, evm, docker).
 -   **sandbox verification:** analyzes the running environment to detect potential isolation weaknesses and provides hardening advice.
+-   **.sh only** no other deps.
 
 ## prerequisites
 
@@ -61,11 +62,10 @@ go ahead. \
     5) docker engine        10) quit
     ```
 
-
 ## todo 
 
 - snapshots 
-- more default and non-default stuff 
+- more default and non-default stuff, kinda weirdo labs. suggest this requires catalogue..
 - linking, prebuilt docker images for weird project 
 - setup vpn, rdp, and stuff.
 - simpler clone&usage, better oneliner 
