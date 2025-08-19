@@ -1,5 +1,5 @@
 #!/bin/bash
-# META_NAME="verify sandbox configuration"
+# META_NAME="install docker"
 # META_DESC="analyzes the running environment (vm, container, bare metal) to find common isolation weaknesses and provides hardening advice."
 
 set -e
