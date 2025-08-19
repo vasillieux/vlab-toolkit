@@ -231,7 +231,7 @@ render_menu() {
     done
 }
 
-prepare_system() { print_info "syncing packages and installing core tools..."; system_update; os_pkg_install "${core_deps[@]}"; }
+prepare_system() { print_info "syncing packages and installing core tools..."; update_system; os_pkg_install "${core_deps[@]}"; }
 # initialization!
 init_dirs;prepare_system
 
