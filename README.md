@@ -54,7 +54,7 @@ call it directly \
 
 ## addons 
 
-You can install additional modules via vlab's menu
+You can install additional modules via vlab's menu \
 The recommended (yet empty) repo is:
 
 `https://github.com/vasillieux/vlab-modules-community`
