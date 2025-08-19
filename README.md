@@ -52,6 +52,13 @@ after you can use the same command to call `vlab.sh` or
 call it directly \
 ```sudo /usr/share/vlab/core/vlab.sh```
 
+## addons 
+
+You can install additional modules via vlab's menu
+The recommended (yet empty) repo is:
+
+`https://github.com/vasillieux/vlab-modules-community`
+
 ## todo 
 
 - snapshots 
