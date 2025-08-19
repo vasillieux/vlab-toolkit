@@ -65,7 +65,7 @@ The recommended (yet empty) repo is:
 - more default and non-default stuff, kinda weirdo labs. suggest this requires catalogue..
 - linking, prebuilt docker images for weird project 
 - setup vpn, rdp, and stuff.
-- simpler clone&usage, better oneliner 
+- <del>simpler clone&usage, better oneliner </del>
 
 ## disclaimer
 
