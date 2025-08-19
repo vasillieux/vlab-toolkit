@@ -65,7 +65,7 @@ go ahead. \
 ## todo 
 
 - snapshots 
-- more default and non-default stuff 
+- more default and non-default stuff, kinda weirdo labs. suggest this requires catalogue..
 - linking, prebuilt docker images for weird project 
 - setup vpn, rdp, and stuff.
 - simpler clone&usage, better oneliner 
