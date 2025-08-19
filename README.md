@@ -4,7 +4,11 @@ yo want to just get stuff done with no obselete dependencies
 when running your new qemu/docker/server lab?
 wanna to get specific package but don't want to setup it few hours just to test something?
 
-go ahead. \\
+go ahead. \
+ /\_/\
+( o o )
+==_Y_==
+  `-'
 
 <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/e5b76c47-aefb-4921-b825-dcfa90d28c4b" />
 
@@ -53,6 +57,13 @@ go ahead. \\
     5) docker engine        10) quit
     ```
 
+
+## todo 
+
+- snapshots 
+- more default and non-default stuff 
+- linking, prebuilt docker images for weird project 
+- setup vpn, rdp, and stuff.
 
 ## disclaimer
 
