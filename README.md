@@ -5,6 +5,8 @@ when running your new qemu/docker/server lab?
 wanna to get specific package but don't want to setup it few hours just to test something?
 
 go ahead.
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/e5b76c47-aefb-4921-b825-dcfa90d28c4b" />
+
 
 ## features
 
