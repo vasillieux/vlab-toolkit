@@ -23,6 +23,7 @@ go ahead. \
 -   **modular design:** logic is separated into a controller, installer modules, and os-specific definitions.
 -   **targeted installation:** install only the toolsets you need (recon, wifi, general, evm, docker).
 -   **sandbox verification:** analyzes the running environment to detect potential isolation weaknesses and provides hardening advice.
+-   **.sh only** no other deps.
 
 ## prerequisites
 
@@ -60,7 +61,6 @@ go ahead. \
     4. evm tools            9) --- exit ---
     5) docker engine        10) quit
     ```
-
 
 ## todo 
 
