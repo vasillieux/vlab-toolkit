@@ -3,7 +3,8 @@
 # META_DESC="installs core exploitation and password cracking tools like metasploit, hashcat, john the ripper, and sqlmap."
 
 set -e
-source "$(dirname "${BASH_SOURCE[0]}")/../../definitions/$vlab_os.sh"
+source "$source_dir/$vlab_os.sh"
+
 
 main() {
     pkg_install "${general_pkgs[@]}"
