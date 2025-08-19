@@ -28,7 +28,7 @@ if [ -f /etc/os-release ]; then vlab_os=$(grep -E '^ID=' /etc/os-release | cut -
 export vlab_os
 
 case "$vlab_os" in
-    ubuntu|arch|nixos)
+    ubuntu|arch)
         print_info "detected os: $vlab_os"
         if [ -f "$source_dir/$vlab_os.sh" ]; then source "$source_dir/$vlab_os.sh"; else print_error "definition file missing for $vlab_os"; exit 1; fi
         ;;
