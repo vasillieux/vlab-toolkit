@@ -40,4 +40,4 @@ if [ ! -f "$CORE_DIR/vlab.sh" ]; then
 fi
 
 # --- stage 2: (sorry, Elliot)
-exec bash "$CORE_DIR/vlab.sh"
+"$CORE_DIR/vlab.sh"
