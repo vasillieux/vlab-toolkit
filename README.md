@@ -67,6 +67,7 @@ go ahead. \
 - more default and non-default stuff 
 - linking, prebuilt docker images for weird project 
 - setup vpn, rdp, and stuff.
+- simpler clone&usage, better oneliner 
 
 ## disclaimer
 
