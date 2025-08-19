@@ -14,7 +14,8 @@ go ahead. \
   `-'
 ```
 
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/e5b76c47-aefb-4921-b825-dcfa90d28c4b" />
+<img width="500" height="230" alt="image" src="https://github.com/user-attachments/assets/b8bd8d51-8feb-4cf9-8176-ed36b02574b1" />
+
 
 
 ## features
