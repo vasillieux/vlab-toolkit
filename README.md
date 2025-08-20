@@ -8,9 +8,9 @@ when running your new qemu/docker/server lab?
 
 ```
  /\_/\           
-( o o )
-==_Y_==    go ahead!
-  `-'
+( o o )   go ahead!
+==_Y_==    check demo and quick start!
+  `-'      
 ```
 
 ## Demo
