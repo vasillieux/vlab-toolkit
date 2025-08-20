@@ -35,7 +35,7 @@ Vlab's helping to perform all quick checks and setup neccessary software, even w
 -   **sandbox verification:** analyzes the running environment to detect potential isolation weaknesses and provides hardening advice.
 -   **.sh only** no other deps.
 -   **user-defined modules**
--   **verification 3rd party modules with hash**
+-   **security**: verification 3rd party modules with hash**
 
 ## prerequisites
 
