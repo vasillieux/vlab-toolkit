@@ -4,7 +4,7 @@
 when running your new qemu/docker/server lab?
 - wanna to get specific package but don't want to setup it few hours just to test something?
 - you're not sure that your lab-system is safe?
-- <de>just browse interesting scripts?</del>
+- <del>just browse interesting scripts?</del>
 
 go ahead. \
 
