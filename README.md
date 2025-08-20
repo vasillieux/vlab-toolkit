@@ -6,12 +6,10 @@ when running your new qemu/docker/server lab?
 - you're not sure that your lab-system is safe?
 - <del>just browse interesting scripts?</del>
 
-go ahead. \
-
 ```
- /\_/\
+ /\_/\           
 ( o o )
-==_Y_==
+==_Y_==    go ahead!
   `-'
 ```
 
