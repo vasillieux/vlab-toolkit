@@ -63,9 +63,11 @@ The recommended (yet empty) repo is:
 ## todo 
 
 - snapshots 
-- more default and non-default stuff, kinda weirdo labs. suggest this requires catalogue..
-- linking, prebuilt docker images for weird project 
-- setup vpn, rdp, and stuff.
+- nosudo mode (!) needed to be specified for each module
+- advanced core & community scripts
+  - more default and non-default stuff, kinda weirdo labs. suggest this requires catalogue..
+  - linking, prebuilt docker images for weird project 
+  - setup vpn, rdp, and stuff.
 - <del>simpler clone&usage, better oneliner </del>
 
 ## disclaimer
